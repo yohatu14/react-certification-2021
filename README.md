@@ -6,9 +6,9 @@ Thank you for participating in the React Certification 2020 course! Here you'll 
 
 ## The challenge
 
-The purpose of the challenge is for you to demonstrate your React skills. This is your chance to show-off everything you've learned during the course and to earn your certification!!
+The purpose of the challenge is for you to demonstrate your React skills. This is your chance to show off everything you've learned during the course and to earn your certification!!
 
-The idea is that you build and deliver a **whole** React application on your own. We don't want to limit you by providing some "fill in the blanks" exercises, but instead request you to build it from scratch! We hope you find this excersice challenging and engaging.
+The idea is that you build and deliver a **whole** React application on your own. We don't want to limit you by providing some "fill in the blanks" exercises, but instead request you to build it from scratch! We hope you find this exercise challenging and engaging.
 
 The project "theme" is to build a YouTube client app.
 
@@ -24,7 +24,7 @@ You should use this application just as a guide and as a trigger for your own id
 
 These are the main requirements we will evaluate from your deliverable:
 
-- Use all what you've learned in the course:
+- Use all that you've learned in the course:
   - Functional Components
     - React Hooks
     - Custom Hooks
@@ -68,7 +68,7 @@ In order to fetch videos from YouTube you need to create a new project using the
 
 Authentication is not directly covered on this course's topics; that's why we are not requesting you to integrate with a real authentication provider (such as Auth0).
 
-Instead, we wan't you to explore how to setup your application to handle this kind of requirements: sharing the loged-in user state, define public and private routes, display content based on the authenticated user, etc.
+Instead, we want you to explore how to set up your application to handle this kind of requirement: sharing the logged-in user state, define public and private routes, display content based on the authenticated user, etc.
 
 You can use this mocked-login function in your application; just provide in the UI a way to capture the username and password values, and then handle the success and error cases (e.g. create a React Context to provide your logged-in user to the rest of the application).
 
