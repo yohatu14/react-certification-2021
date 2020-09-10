@@ -10,13 +10,13 @@ The purpose of the challenge is for you to demonstrate your React skills. This i
 
 The idea is that you build and deliver a **whole** React application on your own. We don't want to limit you by providing some "fill in the blanks" exercises, but instead request you to build it from scratch! We hope you find this exercise challenging and engaging.
 
-The project "theme" is to build a YouTube client app.
+The goal is to build a YouTube client app.
 
 We've created a demo application: https://react-certification-2020.netlify.app/
 
 > **NOTE:* Use `wizeline` as the username and `Rocks!` as the password to log in*
 
-We won't share its source-code until after the certification is complete and all the participants deliver their owl implementations (we don't want to bias your solution).
+We won't share its source-code until after the certification is complete and all the participants deliver their own implementations (we don't want to bias your solution).
 
 You should use this application just as a guide and as a trigger for your own ideas. It's not mandatory to reproduce the exact functionalities nor the same styling; this is **YOUR** project and you can be creative in the way you build it.
 
@@ -66,7 +66,7 @@ In order to fetch videos from YouTube you need to create a new project using the
 
 ### Authentication with Mocked Login
 
-Authentication is not directly covered on this course's topics; that's why we are not requesting you to integrate with a real authentication provider (such as Auth0).
+Authentication is not directly covered on this course's topics; that's why we are not requesting you to integrate with a real authentication provider (such as Auth0, OAuth, etc.).
 
 Instead, we want you to explore how to set up your application to handle this kind of requirement: sharing the logged-in user state, define public and private routes, display content based on the authenticated user, etc.
 
@@ -93,11 +93,17 @@ export default async function loginApi(username, password) {
 }
 ```
 
-## Delivery
+## Deliverables
 
-Here are some suggestions for you to plan towards the deliverable:
+We provide the delivery dates so you can plan accordingly; please take this challenge seriously and try to make progress constantly.
 
-### First Delivery (due September 7th 23:59PM)
+It’s worth mentioning that you’ll ONLY get feedback from the review team for your first deliverable, so you will have a chance to fix or improve the code based on our suggestions.
+
+For the final deliverable, we will provide some feedback to but there is no extra review date, so if you are struggling with something try to get some help beforehand with your peers or by using the academy-reactcert2020 slack channel.
+
+
+### First Deliverable (due September 28th 23:59PM)
+
 - Login
   - Implement the Mocked Login and store the logged-in user in a global accessible Context.
 
@@ -113,9 +119,10 @@ Here are some suggestions for you to plan towards the deliverable:
   - Display the favorite videos on a private route.
   - Allow users to see the details of that video.
 
-At this point, don't worry about styling nor tests, you will be focused on those in the next delivery.
+>**Important:* what’s listed in this deliverable is just for guidance and to help you distribute your workload; you can deliver more or fewer items if necessary.
 
-### Second Delivery (due September 11th 23:59PM)
+### Final Deliverable (due October 5th 23:59PM)
+
 - Finish any pending functionality or address any comment you receive from your previous deliverable.
 
 - Style your views using styled-components; use any 3rd party CSS framework if necessary.
@@ -124,9 +131,13 @@ At this point, don't worry about styling nor tests, you will be focused on those
   - Create tests for your application
   - Coverage must be at least 70%
 
-### Code Review
 
-When requested, submit your application repository-URL for review.
+## Submitting the deliverables
 
-Publish your application using [Netlify](https://app.netlify.com/) (or any other hosting solution) and share the URL with the React certification team. Don't forget to include any additional information if necessary (e.g. test user credentials, etc).
+For submitting your work, you should follow these steps:
+# Create a pull request with your code, targeting the master branch of the repository [react-certification-2020](https://github.com/wizelineacademy/react-certification-2020).
+# Deploy your application code to any hosting service (we suggest you use Netlify or any other free hosting provider you want to use like Firebase, etc.).
+# Fill out this form and provide the requested information: https://forms.gle/ePnLR2xNVc3M1HLu8
+
+> **Important:* Don't forget to include any additional information that might be necessary for running your code (e.g. test user credentials, etc).
 
