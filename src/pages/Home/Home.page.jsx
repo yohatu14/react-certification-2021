@@ -1,14 +1,12 @@
 import React from 'react';
-import Header from '../../components/Header/Header.component'
+import Header from '../../components/Header/Header.component';
 import './Home.styles.css';
 import Grid from '@material-ui/core/Grid';
-import VideoCard from '../../components/VideoCard/VideoCard.component'
+import VideoCard from '../../components/VideoCard/VideoCard.component';
 
 function HomePage(props) {
-
-
   return (
-    <section className="homepage" >
+    <section className="homepage">
       <Header />
 
       <div className="divList">
@@ -26,7 +24,6 @@ function HomePage(props) {
           </Grid>
         </Grid>
       </div>
-
     </section>
   );
 }
