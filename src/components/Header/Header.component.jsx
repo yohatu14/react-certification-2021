@@ -3,26 +3,16 @@ import { alpha, makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
-import Badge from '@material-ui/core/Badge';
-import MenuItem from '@material-ui/core/MenuItem';
-import Menu from '@material-ui/core/Menu';
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 import AccountCircle from '@material-ui/icons/AccountCircle';
-import MailIcon from '@material-ui/icons/Mail';
-import NotificationsIcon from '@material-ui/icons/Notifications';
-import MoreIcon from '@material-ui/icons/MoreVert';
 import Switch from '@material-ui/core/Switch';
-import './Header.styles.css';
-
-
+import './Header.css';
 
 const useStyles = makeStyles((theme) => ({
-
   abRoot: {
-    backgroundColor: "#1C5476"
+    backgroundColor: '#1C5476',
   },
   grow: {
     flexGrow: 1,
@@ -92,9 +82,6 @@ function Header() {
     checked: true,
   });
 
-  const handleChange = (event) => {
-    setState({ ...state, [event.target.name]: event.target.checked });
-  };
   const classes = useStyles();
   const menuId = 'primary-search-account-menu';
 
@@ -105,7 +92,8 @@ function Header() {
       <AppBar
         classes={{
           root: classes.abRoot,
-        }} >
+        }}
+      >
         <Toolbar>
           <IconButton
             edge="start"
@@ -133,11 +121,10 @@ function Header() {
           <div className={classes.sectionDesktop}>
             <Switch
               checked={state.checked}
-              color="white"
               name="checked"
               inputProps={{ 'aria-label': 'primary checkbox' }}
             />
-            <p>Dark mode</p>
+            <p data-testid="header-1"> Dark mode</p>
             <IconButton
               edge="end"
               aria-label="account of current user"
@@ -148,7 +135,6 @@ function Header() {
               <AccountCircle />
             </IconButton>
           </div>
-
         </Toolbar>
       </AppBar>
     </div>
